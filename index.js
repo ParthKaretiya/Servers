@@ -12,6 +12,10 @@ app.get("/", (req, res) => {
   res.send("Hey Parth Karetiya");
 });
 
+app.get("/users" , (req,res)=>{
+  res.status(200).json(users);
+});
+
 app.get("/users/test/:users_id", (req, res) => {
     console.log("this is req:",req);
   res.status(200).json(users);
