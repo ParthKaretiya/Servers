@@ -1,7 +1,7 @@
 {
-  "name": "parth karetiya",
+  "name": "project1",
   "version": "1.0.0",
-  "description": "this is my first rest api",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

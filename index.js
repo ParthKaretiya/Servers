@@ -1,17 +1,21 @@
 const express = require("express");
+
 const app = express();
-// app.use(express.json());
 
 const users = [
   { id: 1, name: "Arjun", role: "student" },
-  { id: 2, name: "Priyesha", role: "mentor" }
+  { id: 2, name: "Priyesha", role: "mentor" },
+  {id : 3 , name:"Parth" , role : "student"}
 ];
 
-app.get("/users", (req, res) => {
-  res.status(200).json(users);
+app.get("/", (req, res) => {
+  res.send("Hey Parth Karetiya");
 });
 
-
+app.get("/users/test/:users_id", (req, res) => {
+    console.log("this is req:",req);
+  res.status(200).json(users);
+});
 
 app.get("/users/:id", (req, res) => {
   const userId = Number(req.params.id);
