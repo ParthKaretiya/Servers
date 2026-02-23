@@ -22,6 +22,6 @@ npm start
 
 Open http://localhost:3000
 
-Deployment Link : https://one-89lq.onrender.com
+Deployment Link : https://one-89lq.onrender.com/students
 
 Documentation : https://documenter.getpostman.com/view/50839329/2sBXcEmg8G 
